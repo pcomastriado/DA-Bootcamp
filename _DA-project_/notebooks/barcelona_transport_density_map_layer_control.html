@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e69893242c9f98b7be324fa12950fe1d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e69893242c9f98b7be324fa12950fe1d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e69893242c9f98b7be324fa12950fe1d = L.map(
+                "map_e69893242c9f98b7be324fa12950fe1d",
+                {
+                    center: [41.3851, 2.1734],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_79cc8ecc648ef3e45154af206802d287 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_79cc8ecc648ef3e45154af206802d287.addTo(map_e69893242c9f98b7be324fa12950fe1d);
+        
+    
+            var heat_map_ab0befd6f15a1908b671e1a0266cfc9e = L.heatLayer(
+                [[41.38113230201205, 2.18072810998572, 27045.01], [41.391593407688724, 2.1644699186245617, 36814.48], [41.41026165289484, 2.15222383071547, 30020.76], [41.42916117461576, 2.150570797555767, 15061.71], [41.38693347728953, 2.118235793545099, 13878.9], [41.4463085565199, 2.1750747031632858, 22309.32], [41.43503511111211, 2.193308986063178, 23591.81], [41.407634204697274, 2.2010372754972765, 23985.18], [41.34979579455751, 2.144443994054813, 8438.76], [41.412597374501594, 2.1065130739650466, 7628.83]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 18,
+  "radius": 25,
+  "blur": 15,
+}
+            );
+        
+    
+            heat_map_ab0befd6f15a1908b671e1a0266cfc9e.addTo(map_e69893242c9f98b7be324fa12950fe1d);
+        
+    
+            var heat_map_cdcb649315fb80e940d65028f2a719f6 = L.heatLayer(
+                [[41.38113230201205, 2.18072810998572, 34.30656934306569], [41.391593407688724, 2.1644699186245617, 49.73190348525469], [41.41026165289484, 2.15222383071547, 43.675417661097846], [41.42916117461576, 2.150570797555767, 28.42809364548495], [41.38693347728953, 2.118235793545099, 30.89700996677741], [41.4463085565199, 2.1750747031632858, 36.397515527950304], [41.43503511111211, 2.193308986063178, 30.652503793626707], [41.407634204697274, 2.2010372754972765, 29.355149181905677], [41.34979579455751, 2.144443994054813, 17.195767195767196], [41.412597374501594, 2.1065130739650466, 20.040180813661475]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 18,
+  "radius": 25,
+  "blur": 15,
+}
+            );
+        
+    
+            heat_map_cdcb649315fb80e940d65028f2a719f6.addTo(map_e69893242c9f98b7be324fa12950fe1d);
+        
+    
+            var heat_map_db7f71790028fdab5228c23304127b07 = L.heatLayer(
+                [[41.38113230201205, 2.18072810998572, 1.2684989429175475], [41.391593407688724, 2.1644699186245617, 1.3508789816338715], [41.41026165289484, 2.15222383071547, 1.4548403253118367], [41.42916117461576, 2.150570797555767, 1.887441850137117], [41.38693347728953, 2.118235793545099, 2.2261852042465082], [41.4463085565199, 2.1750747031632858, 1.6314939584609387], [41.43503511111211, 2.193308986063178, 1.2992860358911686], [41.407634204697274, 2.2010372754972765, 1.2238870653194547], [41.34979579455751, 2.144443994054813, 2.0377133721021363], [41.412597374501594, 2.1065130739650466, 2.6269010468101914]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 18,
+  "radius": 25,
+  "blur": 15,
+}
+            );
+        
+    
+            heat_map_db7f71790028fdab5228c23304127b07.addTo(map_e69893242c9f98b7be324fa12950fe1d);
+        
+    
+            var layer_control_961f6e4e7d6343a4ab9af48c92a93a2f_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_79cc8ecc648ef3e45154af206802d287,
+                },
+                overlays :  {
+                    "Population density" : heat_map_ab0befd6f15a1908b671e1a0266cfc9e,
+                    "Transport density" : heat_map_cdcb649315fb80e940d65028f2a719f6,
+                    "Transport per 1000 inhabitants" : heat_map_db7f71790028fdab5228c23304127b07,
+                },
+            };
+            let layer_control_961f6e4e7d6343a4ab9af48c92a93a2f = L.control.layers(
+                layer_control_961f6e4e7d6343a4ab9af48c92a93a2f_layers.base_layers,
+                layer_control_961f6e4e7d6343a4ab9af48c92a93a2f_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_e69893242c9f98b7be324fa12950fe1d);
+
+        
+    
+            var circle_marker_57391144d18aa625af7fed3a66c0ae50 = L.circleMarker(
+                [41.38113230201205, 2.18072810998572],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
+            ).addTo(map_e69893242c9f98b7be324fa12950fe1d);
+        
+    
+        var popup_f6c2f70202df071f161c7ef4e477aeea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_16523615556fd910709f1c11a8e62421 = $(`<div id="html_16523615556fd910709f1c11a8e62421" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-size: 14px;">         <strong>District: Ciutat Vella</strong><br>         Population: 111,155 inhabitants <br>         Transports: 141 <br>         Area: 4.11 km² <br>         Population Density: 27,045 inhab/km² <br>         Transport density: 34 transports/km² <br>         Transport per 1000 inhabitants: 1.27     </div>     </div>`)[0];
+                popup_f6c2f70202df071f161c7ef4e477aeea.setContent(html_16523615556fd910709f1c11a8e62421);
+            
+        
+
+        circle_marker_57391144d18aa625af7fed3a66c0ae50.bindPopup(popup_f6c2f70202df071f161c7ef4e477aeea)
+        ;
+
+        
+    
+    
+            var circle_marker_0ac5c1395991a745c1b0551d547b76ee = L.circleMarker(
+                [41.391593407688724, 2.1644699186245617],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
+            ).addTo(map_e69893242c9f98b7be324fa12950fe1d);
+        
+    
+        var popup_c157cfd1edcbdc119730af67d4e95d85 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4ee886f9c4c0c4719f201cb92e9aeb8a = $(`<div id="html_4ee886f9c4c0c4719f201cb92e9aeb8a" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-size: 14px;">         <strong>District: Eixample</strong><br>         Population: 274,636 inhabitants <br>         Transports: 371 <br>         Area: 7.46 km² <br>         Population Density: 36,814 inhab/km² <br>         Transport density: 50 transports/km² <br>         Transport per 1000 inhabitants: 1.35     </div>     </div>`)[0];
+                popup_c157cfd1edcbdc119730af67d4e95d85.setContent(html_4ee886f9c4c0c4719f201cb92e9aeb8a);
+            
+        
+
+        circle_marker_0ac5c1395991a745c1b0551d547b76ee.bindPopup(popup_c157cfd1edcbdc119730af67d4e95d85)
+        ;
+
+        
+    
+    
+            var circle_marker_475f34d01142851bc7cd36c712eb41bf = L.circleMarker(
+                [41.41026165289484, 2.15222383071547],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
+            ).addTo(map_e69893242c9f98b7be324fa12950fe1d);
+        
+    
+        var popup_32cce5a531ae12bb6b27719b871e5a4e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_09358b3f4bd10936ebbaa992c9f73385 = $(`<div id="html_09358b3f4bd10936ebbaa992c9f73385" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-size: 14px;">         <strong>District: Gràcia</strong><br>         Population: 125,787 inhabitants <br>         Transports: 183 <br>         Area: 4.19 km² <br>         Population Density: 30,021 inhab/km² <br>         Transport density: 44 transports/km² <br>         Transport per 1000 inhabitants: 1.45     </div>     </div>`)[0];
+                popup_32cce5a531ae12bb6b27719b871e5a4e.setContent(html_09358b3f4bd10936ebbaa992c9f73385);
+            
+        
+
+        circle_marker_475f34d01142851bc7cd36c712eb41bf.bindPopup(popup_32cce5a531ae12bb6b27719b871e5a4e)
+        ;
+
+        
+    
+    
+            var circle_marker_a100bfd9a76877759ac6c3c0f3cdb68b = L.circleMarker(
+                [41.42916117461576, 2.150570797555767],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
+            ).addTo(map_e69893242c9f98b7be324fa12950fe1d);
+        
+    
+        var popup_dc1363b8ec3b6e8256ecae12b14ec265 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ebdb52d73e84205957a83009a2bad4e2 = $(`<div id="html_ebdb52d73e84205957a83009a2bad4e2" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-size: 14px;">         <strong>District: Horta-Guinardó</strong><br>         Population: 180,138 inhabitants <br>         Transports: 340 <br>         Area: 11.96 km² <br>         Population Density: 15,062 inhab/km² <br>         Transport density: 28 transports/km² <br>         Transport per 1000 inhabitants: 1.89     </div>     </div>`)[0];
+                popup_dc1363b8ec3b6e8256ecae12b14ec265.setContent(html_ebdb52d73e84205957a83009a2bad4e2);
+            
+        
+
+        circle_marker_a100bfd9a76877759ac6c3c0f3cdb68b.bindPopup(popup_dc1363b8ec3b6e8256ecae12b14ec265)
+        ;
+
+        
+    
+    
+            var circle_marker_a040cdb4fc16e1531a7d9551fc95a80f = L.circleMarker(
+                [41.38693347728953, 2.118235793545099],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
+            ).addTo(map_e69893242c9f98b7be324fa12950fe1d);
+        
+    
+        var popup_fa14c7b7a811c1c9412a090484f3c2ec = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_43661ee8bb074ded36922bf9ebdb1601 = $(`<div id="html_43661ee8bb074ded36922bf9ebdb1601" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-size: 14px;">         <strong>District: Les Corts</strong><br>         Population: 83,551 inhabitants <br>         Transports: 186 <br>         Area: 6.02 km² <br>         Population Density: 13,879 inhab/km² <br>         Transport density: 31 transports/km² <br>         Transport per 1000 inhabitants: 2.23     </div>     </div>`)[0];
+                popup_fa14c7b7a811c1c9412a090484f3c2ec.setContent(html_43661ee8bb074ded36922bf9ebdb1601);
+            
+        
+
+        circle_marker_a040cdb4fc16e1531a7d9551fc95a80f.bindPopup(popup_fa14c7b7a811c1c9412a090484f3c2ec)
+        ;
+
+        
+    
+    
+            var circle_marker_d2afddbf70be83ca9b1fbc4f6cb4bef4 = L.circleMarker(
+                [41.4463085565199, 2.1750747031632858],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
+            ).addTo(map_e69893242c9f98b7be324fa12950fe1d);
+        
+    
+        var popup_1f88adc20a4e84cf35f44d4466095397 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3b7dd191d567fc08f8a4ab4a81449974 = $(`<div id="html_3b7dd191d567fc08f8a4ab4a81449974" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-size: 14px;">         <strong>District: Nou Barris</strong><br>         Population: 179,590 inhabitants <br>         Transports: 293 <br>         Area: 8.05 km² <br>         Population Density: 22,309 inhab/km² <br>         Transport density: 36 transports/km² <br>         Transport per 1000 inhabitants: 1.63     </div>     </div>`)[0];
+                popup_1f88adc20a4e84cf35f44d4466095397.setContent(html_3b7dd191d567fc08f8a4ab4a81449974);
+            
+        
+
+        circle_marker_d2afddbf70be83ca9b1fbc4f6cb4bef4.bindPopup(popup_1f88adc20a4e84cf35f44d4466095397)
+        ;
+
+        
+    
+    
+            var circle_marker_c711b7fa83944c3b74d620f78c1c2d99 = L.circleMarker(
+                [41.43503511111211, 2.193308986063178],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
+            ).addTo(map_e69893242c9f98b7be324fa12950fe1d);
+        
+    
+        var popup_8380f980bc29aa4e1268fb2c55932f64 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4f576b29c4eb405b66b40bda33c7f08c = $(`<div id="html_4f576b29c4eb405b66b40bda33c7f08c" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-size: 14px;">         <strong>District: Sant Andreu</strong><br>         Population: 155,470 inhabitants <br>         Transports: 202 <br>         Area: 6.59 km² <br>         Population Density: 23,592 inhab/km² <br>         Transport density: 31 transports/km² <br>         Transport per 1000 inhabitants: 1.30     </div>     </div>`)[0];
+                popup_8380f980bc29aa4e1268fb2c55932f64.setContent(html_4f576b29c4eb405b66b40bda33c7f08c);
+            
+        
+
+        circle_marker_c711b7fa83944c3b74d620f78c1c2d99.bindPopup(popup_8380f980bc29aa4e1268fb2c55932f64)
+        ;
+
+        
+    
+    
+            var circle_marker_055aa638720fc00737646d473118a419 = L.circleMarker(
+                [41.407634204697274, 2.2010372754972765],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
+            ).addTo(map_e69893242c9f98b7be324fa12950fe1d);
+        
+    
+        var popup_7cfe08a1529dcc61043de36eb99f6ff1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3090090e98da3c07992dacc08425721a = $(`<div id="html_3090090e98da3c07992dacc08425721a" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-size: 14px;">         <strong>District: Sant Martí</strong><br>         Population: 249,206 inhabitants <br>         Transports: 305 <br>         Area: 10.39 km² <br>         Population Density: 23,985 inhab/km² <br>         Transport density: 29 transports/km² <br>         Transport per 1000 inhabitants: 1.22     </div>     </div>`)[0];
+                popup_7cfe08a1529dcc61043de36eb99f6ff1.setContent(html_3090090e98da3c07992dacc08425721a);
+            
+        
+
+        circle_marker_055aa638720fc00737646d473118a419.bindPopup(popup_7cfe08a1529dcc61043de36eb99f6ff1)
+        ;
+
+        
+    
+    
+            var circle_marker_c6cf1c7500e5a7b80194fd9bac607441 = L.circleMarker(
+                [41.34979579455751, 2.144443994054813],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
+            ).addTo(map_e69893242c9f98b7be324fa12950fe1d);
+        
+    
+        var popup_e7a5f5ade4c025a2c97ae596c8ab3821 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7df14d7d82ac607998fef33b9b2b4766 = $(`<div id="html_7df14d7d82ac607998fef33b9b2b4766" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-size: 14px;">         <strong>District: Sants-Montjuïc</strong><br>         Population: 191,391 inhabitants <br>         Transports: 390 <br>         Area: 22.68 km² <br>         Population Density: 8,439 inhab/km² <br>         Transport density: 17 transports/km² <br>         Transport per 1000 inhabitants: 2.04     </div>     </div>`)[0];
+                popup_e7a5f5ade4c025a2c97ae596c8ab3821.setContent(html_7df14d7d82ac607998fef33b9b2b4766);
+            
+        
+
+        circle_marker_c6cf1c7500e5a7b80194fd9bac607441.bindPopup(popup_e7a5f5ade4c025a2c97ae596c8ab3821)
+        ;
+
+        
+    
+    
+            var circle_marker_630259b571b4d8e3b8ba2f01c05a283e = L.circleMarker(
+                [41.412597374501594, 2.1065130739650466],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 1}
+            ).addTo(map_e69893242c9f98b7be324fa12950fe1d);
+        
+    
+        var popup_52547ef1235dae2d9a13e68b3dc190dd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b429780bfdcc211a492e4d20ae3d7e48 = $(`<div id="html_b429780bfdcc211a492e4d20ae3d7e48" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-size: 14px;">         <strong>District: Sarrià-Sant Gervasi</strong><br>         Population: 151,890 inhabitants <br>         Transports: 399 <br>         Area: 19.91 km² <br>         Population Density: 7,629 inhab/km² <br>         Transport density: 20 transports/km² <br>         Transport per 1000 inhabitants: 2.63     </div>     </div>`)[0];
+                popup_52547ef1235dae2d9a13e68b3dc190dd.setContent(html_b429780bfdcc211a492e4d20ae3d7e48);
+            
+        
+
+        circle_marker_630259b571b4d8e3b8ba2f01c05a283e.bindPopup(popup_52547ef1235dae2d9a13e68b3dc190dd)
+        ;
+
+        
+    
+</script>
+</html>
