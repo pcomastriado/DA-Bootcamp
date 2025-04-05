@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_63faf9a5bd670edb27520062b76a719c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_63faf9a5bd670edb27520062b76a719c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_63faf9a5bd670edb27520062b76a719c = L.map(
+                "map_63faf9a5bd670edb27520062b76a719c",
+                {
+                    center: [41.3851, 2.1734],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_59776a970935c5a26616367b7be4ec8b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_59776a970935c5a26616367b7be4ec8b.addTo(map_63faf9a5bd670edb27520062b76a719c);
+        
+    
+            var circle_marker_9eac85971a4d05c5097d640917e25e18 = L.circleMarker(
+                [41.38113230201205, 2.18072810998572],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.1155, "stroke": true, "weight": 0.6}
+            ).addTo(map_63faf9a5bd670edb27520062b76a719c);
+        
+    
+        var popup_80a297eb30faa9963ed8ec058b4a3069 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_a929dd7cfee2f8f4f9654dd9d958c5ca = $(`<div id="html_a929dd7cfee2f8f4f9654dd9d958c5ca" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-size: 14px;">         <strong>District: Ciutat Vella</strong><br>         Population: 111,155 inhabitants     </div>     </div>`)[0];
+                popup_80a297eb30faa9963ed8ec058b4a3069.setContent(html_a929dd7cfee2f8f4f9654dd9d958c5ca);
+            
+        
+
+        circle_marker_9eac85971a4d05c5097d640917e25e18.bindPopup(popup_80a297eb30faa9963ed8ec058b4a3069)
+        ;
+
+        
+    
+    
+            var circle_marker_036f1e02571f1389327a8c3378f27202 = L.circleMarker(
+                [41.391593407688724, 2.1644699186245617],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 27.4636, "stroke": true, "weight": 0.6}
+            ).addTo(map_63faf9a5bd670edb27520062b76a719c);
+        
+    
+        var popup_5497dda9a1588b5f44b08e05ed5920ec = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_c3f13c3baebf7bc05612799034661659 = $(`<div id="html_c3f13c3baebf7bc05612799034661659" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-size: 14px;">         <strong>District: Eixample</strong><br>         Population: 274,636 inhabitants     </div>     </div>`)[0];
+                popup_5497dda9a1588b5f44b08e05ed5920ec.setContent(html_c3f13c3baebf7bc05612799034661659);
+            
+        
+
+        circle_marker_036f1e02571f1389327a8c3378f27202.bindPopup(popup_5497dda9a1588b5f44b08e05ed5920ec)
+        ;
+
+        
+    
+    
+            var circle_marker_56dc4bfb00b6663de72fc1ac834f6125 = L.circleMarker(
+                [41.41026165289484, 2.15222383071547],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.5787, "stroke": true, "weight": 0.6}
+            ).addTo(map_63faf9a5bd670edb27520062b76a719c);
+        
+    
+        var popup_33e95beef72ed835ac006f3d15ef3232 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_4a74b204146b843ea5e8731816cebe17 = $(`<div id="html_4a74b204146b843ea5e8731816cebe17" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-size: 14px;">         <strong>District: Gràcia</strong><br>         Population: 125,787 inhabitants     </div>     </div>`)[0];
+                popup_33e95beef72ed835ac006f3d15ef3232.setContent(html_4a74b204146b843ea5e8731816cebe17);
+            
+        
+
+        circle_marker_56dc4bfb00b6663de72fc1ac834f6125.bindPopup(popup_33e95beef72ed835ac006f3d15ef3232)
+        ;
+
+        
+    
+    
+            var circle_marker_f3b5703ec6b4602fa99699bedadb812f = L.circleMarker(
+                [41.42916117461576, 2.150570797555767],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.0138, "stroke": true, "weight": 0.6}
+            ).addTo(map_63faf9a5bd670edb27520062b76a719c);
+        
+    
+        var popup_d232236144f68cb1f0505d0c1a698f4a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_02aaca16b4eee295eec7c667ce37e3fd = $(`<div id="html_02aaca16b4eee295eec7c667ce37e3fd" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-size: 14px;">         <strong>District: Horta-Guinardó</strong><br>         Population: 180,138 inhabitants     </div>     </div>`)[0];
+                popup_d232236144f68cb1f0505d0c1a698f4a.setContent(html_02aaca16b4eee295eec7c667ce37e3fd);
+            
+        
+
+        circle_marker_f3b5703ec6b4602fa99699bedadb812f.bindPopup(popup_d232236144f68cb1f0505d0c1a698f4a)
+        ;
+
+        
+    
+    
+            var circle_marker_d7b4d95b427e1e725938fe4aca96710a = L.circleMarker(
+                [41.38693347728953, 2.118235793545099],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.3551, "stroke": true, "weight": 0.6}
+            ).addTo(map_63faf9a5bd670edb27520062b76a719c);
+        
+    
+        var popup_cca4265fcf81b3b8ba5da9e04e6e0f8a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_15274881ab9fb6c9308bad470a8d9a08 = $(`<div id="html_15274881ab9fb6c9308bad470a8d9a08" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-size: 14px;">         <strong>District: Les Corts</strong><br>         Population: 83,551 inhabitants     </div>     </div>`)[0];
+                popup_cca4265fcf81b3b8ba5da9e04e6e0f8a.setContent(html_15274881ab9fb6c9308bad470a8d9a08);
+            
+        
+
+        circle_marker_d7b4d95b427e1e725938fe4aca96710a.bindPopup(popup_cca4265fcf81b3b8ba5da9e04e6e0f8a)
+        ;
+
+        
+    
+    
+            var circle_marker_17f2cd608e3f788f937cfde7d58bf9fc = L.circleMarker(
+                [41.4463085565199, 2.1750747031632858],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.959, "stroke": true, "weight": 0.6}
+            ).addTo(map_63faf9a5bd670edb27520062b76a719c);
+        
+    
+        var popup_83ed6d90ebc1ab631f3157af0138a892 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_c5804fa240c55e4c94358fcddf563942 = $(`<div id="html_c5804fa240c55e4c94358fcddf563942" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-size: 14px;">         <strong>District: Nou Barris</strong><br>         Population: 179,590 inhabitants     </div>     </div>`)[0];
+                popup_83ed6d90ebc1ab631f3157af0138a892.setContent(html_c5804fa240c55e4c94358fcddf563942);
+            
+        
+
+        circle_marker_17f2cd608e3f788f937cfde7d58bf9fc.bindPopup(popup_83ed6d90ebc1ab631f3157af0138a892)
+        ;
+
+        
+    
+    
+            var circle_marker_6c4598b0597044d011fbc57cb33de384 = L.circleMarker(
+                [41.43503511111211, 2.193308986063178],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.547, "stroke": true, "weight": 0.6}
+            ).addTo(map_63faf9a5bd670edb27520062b76a719c);
+        
+    
+        var popup_f5907b97d89cf7f40a2d92f437426132 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_7215040caa5ad596c547027ed74ac84c = $(`<div id="html_7215040caa5ad596c547027ed74ac84c" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-size: 14px;">         <strong>District: Sant Andreu</strong><br>         Population: 155,470 inhabitants     </div>     </div>`)[0];
+                popup_f5907b97d89cf7f40a2d92f437426132.setContent(html_7215040caa5ad596c547027ed74ac84c);
+            
+        
+
+        circle_marker_6c4598b0597044d011fbc57cb33de384.bindPopup(popup_f5907b97d89cf7f40a2d92f437426132)
+        ;
+
+        
+    
+    
+            var circle_marker_5ef8b227e84e3f1c73999d2490f3aa65 = L.circleMarker(
+                [41.407634204697274, 2.2010372754972765],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24.9206, "stroke": true, "weight": 0.6}
+            ).addTo(map_63faf9a5bd670edb27520062b76a719c);
+        
+    
+        var popup_b4207b9b942cf56ef76c84c4354667b3 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_24c2ebe5aee09d0877ad37c3be929c5a = $(`<div id="html_24c2ebe5aee09d0877ad37c3be929c5a" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-size: 14px;">         <strong>District: Sant Martí</strong><br>         Population: 249,206 inhabitants     </div>     </div>`)[0];
+                popup_b4207b9b942cf56ef76c84c4354667b3.setContent(html_24c2ebe5aee09d0877ad37c3be929c5a);
+            
+        
+
+        circle_marker_5ef8b227e84e3f1c73999d2490f3aa65.bindPopup(popup_b4207b9b942cf56ef76c84c4354667b3)
+        ;
+
+        
+    
+    
+            var circle_marker_d9084cdfe3794accc140b84289a0b96f = L.circleMarker(
+                [41.34979579455751, 2.144443994054813],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.1391, "stroke": true, "weight": 0.6}
+            ).addTo(map_63faf9a5bd670edb27520062b76a719c);
+        
+    
+        var popup_69b8d2d5191add9e0620fc8b39d3cb0a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_4b68fa7e56d6568ed7d355521b4f51e6 = $(`<div id="html_4b68fa7e56d6568ed7d355521b4f51e6" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-size: 14px;">         <strong>District: Sants-Montjuïc</strong><br>         Population: 191,391 inhabitants     </div>     </div>`)[0];
+                popup_69b8d2d5191add9e0620fc8b39d3cb0a.setContent(html_4b68fa7e56d6568ed7d355521b4f51e6);
+            
+        
+
+        circle_marker_d9084cdfe3794accc140b84289a0b96f.bindPopup(popup_69b8d2d5191add9e0620fc8b39d3cb0a)
+        ;
+
+        
+    
+    
+            var circle_marker_2013120c49b6a6add35dabfd419bb32c = L.circleMarker(
+                [41.412597374501594, 2.1065130739650466],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.189, "stroke": true, "weight": 0.6}
+            ).addTo(map_63faf9a5bd670edb27520062b76a719c);
+        
+    
+        var popup_8a6b83391ac7d00253f758cdbe609821 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_9b89b38a6c38a2ae4e65e9312138292b = $(`<div id="html_9b89b38a6c38a2ae4e65e9312138292b" style="width: 100.0%; height: 100.0%;">     <div style="width: 250px; font-size: 14px;">         <strong>District: Sarrià-Sant Gervasi</strong><br>         Population: 151,890 inhabitants     </div>     </div>`)[0];
+                popup_8a6b83391ac7d00253f758cdbe609821.setContent(html_9b89b38a6c38a2ae4e65e9312138292b);
+            
+        
+
+        circle_marker_2013120c49b6a6add35dabfd419bb32c.bindPopup(popup_8a6b83391ac7d00253f758cdbe609821)
+        ;
+
+        
+    
+</script>
+</html>
